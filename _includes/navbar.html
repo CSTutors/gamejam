@@ -1,0 +1,38 @@
+<!-- Beg: Navigation //-->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar-header">
+        <!-- Shown When Collapsed //-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            Navigation <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+
+        <!-- Site Brand Always Visible //-->
+        <a class="navbar-brand logo" href="{{ site.url }}">
+        <span class="logo-blue">CS</span>
+        <span class="logo-green">NIGHT</span>
+        <span class="logo-orange">GAME</span>
+        <span class="logo-plum">JAM</span>
+        </a>
+    </div>
+
+    <!-- Shown Links When Expanded //-->
+    <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav">
+            <li {% if page.title == 'Home' %}class="active"{% endif %}><a href="{{ site.url }}/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+
+            <li {% if page.title == 'Prizes' %}class="active"{% endif %}><a href="{{ site.url }}/prizes.html"><span class="glyphicon glyphicon-gift"></span> Prizes</a></li>
+
+            <li {% if page.title == 'Rules' %}class="active"{% endif %}><a href="{{ site.url }}/rules.html"><span class="glyphicon glyphicon-tower"></span> Rules</a></li>
+
+            <li {% if page.title == 'FAQ' %}class="active"{% endif %}><a href="{{ site.url }}/faq.html"><span class="glyphicon glyphicon-book"></span> FAQ</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav pull-right">
+            <li {% if page.title == 'Register' %}class="active"{% endif %}><a href="{{ site.url }}/register.html"><span class="glyphicon glyphicon-pencil"></span> Register</a></li>
+
+            <li {% if page.title == 'Results' %}class="active"{% endif %}><a href="{{ site.url }}/results.html"><span class="glyphicon glyphicon-th-list"></span> Results</a></li>
+        </ul>
+    </div>
+</div>
+<!-- End: Navigation //-->

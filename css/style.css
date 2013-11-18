@@ -1,0 +1,75 @@
+
+/* Font Customization */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.lead {
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.jumbotron {
+  margin-top: 40px;
+}
+
+dd {
+  margin-left: 1.5em;
+}
+
+/* Logo Customization */
+
+.logo {
+  font-family: 'Unica One', sans-serif;
+}
+
+.logo-blue {
+  color: #1C80FF;
+}
+
+.logo-pink {
+  color: #F543EC;
+}
+
+.logo-green {
+  color: #259F16;
+}
+
+.logo-orange {
+  color: #F88005;
+}
+
+.logo-plum {
+  color: #800040;
+}
+
+/* Navbar Customization */
+
+.navbar {
+  font-weight: 300;
+}
+
+/* Footer Customization */
+
+.footer, .footer a, .footer a:hover {
+  color: #bbbbbb;
+}
+
+.footer {
+  font-size: 80%;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1.5em;
+  border-top: 1px solid #eeeeee;
+}
