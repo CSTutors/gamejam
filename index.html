@@ -3,7 +3,6 @@ layout: base
 title: Home
 ---
 
-<!-- Beg: Page Header //-->
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-12">
 
@@ -11,13 +10,90 @@ title: Home
             <img src="{{ site.url }}/img/logo-colorblock.png">
         </div>
 
-        <p class="lead">Need to blow off steam right before finals? Want to exercise your creative programming skills before CS Night? Join us for the <strong>CS Night Game Jam</strong>! See the <a href="{{ site.url }}/rules.html">Rules</a> for details.</p>
+        <p class="lead">Need to blow off steam right before finals? Want to exercise your creative programming skills before <a href="http://csnight.cs.usfca.edu/">CS Night</a>? Join us for the <strong>CS Night Game Jam</strong>! See the <a href="{{ site.url }}/rules.html">Rules</a> for details.</p>
+
+        <h1 class="page-header">Schedule</h1>
+
+        <p>Both <a href="http://csnight.cs.usfca.edu/">CS Night</a> and the CS Night Game Jam will be held on <strong>Thursday, December 5, 2013</strong>. The schedule will be as follows:</p>
+
+        <table class="table table-condensed table-bordered" width="auto">
+        <thead>
+            <tr>
+                <th class="col-sm-1">Start</th>
+                <th class="col-sm-1">End</th>
+                <th class="col-sm-1">Room</th>
+                <th class="col-sm-9">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active">
+                <td>4:00pm</td>
+                <td>4:15pm</td>
+                <td nowrap>LCSI G12</td>
+                <td>
+                    <strong>Game Jam Kickoff</strong><br>
+                    Announce Rules and Theme, Form Teams
+                </td>
+            </tr>
+
+            <tr>
+                <td>4:15pm</td>
+                <td>4:30pm</td>
+                <td>LCSI G12</td>
+                <td>
+                    <strong>App Inventor Introduction</strong><br>
+                    by Professor Alark Joshi
+                </td>
+            </tr>
+
+            <tr>
+                <td>4:30pm</td>
+                <td>6:30pm</td>
+                <td>LCSI G12</td>
+                <td>
+                    <strong>Prototype Coding</strong>
+                    <br>Submissions Due at 6:30pm
+                </td>
+            </tr>
+
+            <tr class="active">
+                <td>6:30pm</td>
+                <td>7:30pm</td>
+                <td>LCSI 307</td>
+                <td>
+                    <strong>CS Night Poster Session</strong>
+                    <br>Free Food and Drink!
+                </td>
+            </tr>
+
+            <tr>
+                <td>7:30pm</td>
+                <td>8:00pm</td>
+                <td>LCSI 307</td>
+                <td>
+                    <strong>State of the Department</strong>
+                    <br>Introductions of New Faculty
+                </td>
+            </tr>
+
+            <tr>
+                <td>8:00pm</td>
+                <td>8:15pm</td>
+                <td>LCSI G12</td>
+                <td>
+                    <strong>Award Ceremony</strong>
+                    <br>Game Jam, Raffle Prizes Awarded
+                </td>
+            </tr>
+
+        </tbody>
+        </table>
 
         <h1 class="page-header">Announcements</h1>
 
         {% for post in site.posts limit:5 %}
         <div class="post">
-        <h3>{{ post.title }}<br><small>Posted {{ post.date | date_to_string }} by {{ post.author }}</h3>
+        <h3>{{ post.title }}<br><small>Posted {{ post.date | date_to_string }} by {{ post.author }}</small></h3>
 
         {{ post.content }}
         </div>
@@ -27,4 +103,3 @@ title: Home
 
     </div>
 </div>
-<!-- End: Page Header //-->
