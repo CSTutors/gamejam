@@ -6,11 +6,41 @@ title: FAQ
 <div class="row">
 <div class="col-lg-12 col-sm-12 col-12">
 
-<h1 class="page-header">FAQ</h1>
+<h1 class="page-header"><a name="top"></a>FAQ</h1>
 
-<p class="lead">Have questions? We have answers! Check out below, or email <a href="mailto:tutoringcenter@cs.usfca.edu">tutoringcenter@cs.usfca.edu</a> with your questions and/or comments.</p>
+<p class="lead">Have questions? We have answers! Check out below, or email <a href="mailto:gamejam@cs.usfca.edu">gamejam@cs.usfca.edu</a> with your questions and/or comments.</p>
 
-<h2></h2>
+<h2>Questions</h2>
+
+<table class="table table-hover">
+<tbody>
+{% for category in site.data.faq %}
+<tr>
+    <th nowrap>{{ category.name }}</th>
+    <td width="100%">
+        <ul>
+            {% for qa in category.faqs %}
+            <li><a href="#{{ qa.id }}">{{ qa.q }}</a></li>
+            {% endfor %}
+        </ul>
+    </td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% for category in site.data.faq %}
+<h2>{{ category.name }}</h2>
+
+    <dl>
+    {% for qa in category.faqs %}
+    <dt><a name="{{ qa.id }}"></a>{{ qa.q }}</dt>
+    <dd><p>{{ qa.a }}</p></dd>
+
+    {% endfor %}
+    </dl>
+<p><small><em><a href="#top">(back to top)</a></em></small></p>
+{% endfor %}
 
 </div>
 </div>
